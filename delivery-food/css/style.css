@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 2.7% 0 3.7% 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+.container .header {
+  margin-bottom: 22px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 16%;
+  min-height: 42px;
+}
+
+.input {
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  padding-left: 35px;
+  text-overflow: ellipsis;
+}
+.input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #BFBFBF;
+}
+.input::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #BFBFBF;
+  opacity: 1;
+}
+.input:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #BFBFBF;
+}
+.input:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+.input-address {
+  min-height: 42px;
+  flex: 57.5%;
+  background: #FFFFFF url(../img/header/home.svg) left 10px center no-repeat;
+}
+
+.buttons {
+  flex: 26.5%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  min-height: 42px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.btn-sign-inn {
+  width: 96px;
+  background: #1890FF;
+  border: 1px solid #1890FF;
+  color: #FFFFFF;
+}
+
+.btn-cart {
+  width: 113px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  color: #595959;
+}
+
+.btn-img {
+  margin-right: 8px;
+}
+
+.btn-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* main */
+.main {
+  padding: 1% 0 6% 0;
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+  margin-bottom: 3.4%;
+}
+
+/* main - promo */
+.promo {
+  min-height: 300px;
+  background: #FFF1B8 url(../img/promo/pizza.png) no-repeat top right -140px /800px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  margin-bottom: 4.6%;
+}
+
+.promo-title {
+  width: 45%;
+  min-height: 92px;
+  font-weight: 700;
+  font-size: 39px;
+  color: #302C34;
+  padding: 5.7% 0 0 5.9%;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.promo-text {
+  width: 45%;
+  min-height: 56px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #302C34;
+  margin: 0;
+  padding-left: 5.9%;  
+}
+
+/* main - restaurants */
+.restaurants-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.6%;
+}
+
+.restaurants-title {
+  flex: 74.5%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  margin: 0;
+}
+
+.input-search {
+  flex: 25.5%;
+  min-height: 34px;
+  background: #FFFFFF url(../img/restaurants/search.svg) left 10px center no-repeat;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 32%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.card:first-child, .card:nth-child(2), .card:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.card-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 5.2% 6.2% 8.9%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin: 0;
+}
+
+.card-tag {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #262626;
+  border-radius: 2px;
+  text-align: center;
+  padding: 1px 8px;
+}
+
+.card-text {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8C8C8C;
+}
+
+.star {
+  margin-right: 7px;
+}
+
+.rating {
+  margin-right: 26px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFC107;
+}
+
+.price {
+  margin-right: 10px;
+}
+.price::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color:  #8C8C8C;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  flex: 0 0 8.4%;
+  min-height: 40px;
+  margin-right: 35px;
+}
+
+.footer-nav {
+  flex: 77.9%;
+}
+
+.footer-link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #595959;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.footer-link:last-child {
+  margin-right: 0;
+}
+
+.footer-social {
+  flex: 10.8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* media */
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .footer-nav {
+    flex: 74.9%;
+  }
+  .footer-social {
+    flex: 13.8%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .promo {
+    background: #FFF1B8 url(../img/promo/pizza.png) no-repeat top right -140px /600px;
+  }
+  .card-info {
+    padding: 3% 4% 4.5%;
+  }
+  .card-title {
+    font-size: 21px;
+  }
+  .card-text {
+    font-size: 16px;
+  }
+  .rating {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .footer-nav {
+    flex: 71.9%;
+  }
+  .footer-social {
+    flex: 16.8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .btn {
+    margin-left: 8px;
+  }
+  .btn-sign-inn {
+    width: 47%;
+  } 
+  .btn-cart {
+    width: 53%;
+  }
+  .promo {
+    min-height: 270px;
+    background: #FFF1B8 url(../img/promo/pizza.png) no-repeat top right -140px /400px;
+  }
+  .promo-title {
+    width: 70%;
+    font-size: 36px;
+  }
+  .promo-text {
+    width: 70%;
+  }
+  .restaurants-title {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .card {
+    flex: 0 0 49%;
+  }
+  .card:first-child, .card:nth-child(2), .card:nth-child(3), .card:nth-child(4) {
+    margin-bottom: 20px;
+  }
+  .footer-nav {
+    flex: 61.9%;
+  }
+  .footer-social {
+    flex: 27.8%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 96%;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .input-address {
+    order: 1;
+    margin-top: 20px;
+  }
+  .btn {
+    margin-left: 10px;
+  }
+  .promo {
+    background: #FFF1B8 url(../img/promo/pizza.png) no-repeat bottom -175px center /400px;
+  }
+  .promo-title {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 5.7% 5.9% 0;
+  }
+  .promo-text {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    padding: 0 5.9%;
+  }
+  .restaurants-header {
+    flex-wrap: wrap;
+  }
+  .restaurants-title {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .card {
+    flex: 0 0 100%;
+  }
+  .card:first-child, .card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5) {
+    margin-bottom: 10px;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  .footer-link {
+    flex: 45%;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 0;
+  }
+  .footer-social {
+    justify-content: space-evenly;
+  }
+}
