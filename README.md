@@ -9,3 +9,5 @@ My websites:
 [simple-wordpress](https://vadimbond.github.io/simple-wordpress/ "simple-wordpress") - simple-wordpress
 
 [batman-2021](https://vadimbond.github.io/batman-2021/ "batman-2021") - batman-2021
+
+[delivery-food](https://vadimbond.github.io/delivery-food/ "delivery-food") - delivery-food
