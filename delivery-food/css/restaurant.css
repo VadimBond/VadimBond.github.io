@@ -114,16 +114,14 @@ body {
   margin-bottom: 3.4%;
 }
 
-/* main - restaurants */
+/* main - products */
 .products-header {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   margin-bottom: 3.6%;
 }
 
 .products-title {
-  /* flex: 74.5%; */
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -167,13 +165,6 @@ body {
   border-radius: 50%;
 }
 
-
-/* .input-search {
-  flex: 25.5%;
-  min-height: 34px;
-  background: #FFFFFF url(../img/restaurants/search.svg) left 10px center no-repeat;
-} */
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -193,40 +184,58 @@ body {
 
 .card-img {
   width: 100%;
-  max-height: 250px;
+  max-height: 212px;
   object-fit: cover;
 }
 
 .card-info {
   padding: 5.2% 6.2% 8.9%;
-}
-
-.card-header {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 10px;
+  min-height: 204px;
 }
 
 .card-title {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   color: #000000;
   margin: 0;
 }
 
-.card-tag {
+.card-desc {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  color: #FFFFFF;
-  background: #262626;
-  border-radius: 2px;
-  text-align: center;
-  padding: 1px 8px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8C8C8C;
+  margin: 0;
 }
 
+.buy {
+  display: flex;
+  align-items: center;
+}
+
+.btn-buy {
+  width: 41%;
+  margin-left: 0;
+  margin-right: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-img-buy {
+  margin-left: 8px;
+}
+
+.buy-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
 
 /* footer */
 .footer {
@@ -269,6 +278,12 @@ body {
   .container {
     max-width: 960px;
   }
+  .card-info {
+    min-height: 240px;
+  }
+  .btn-buy {
+    width: 50%;
+  }
   .footer-nav {
     flex: 74.9%;
   }
@@ -281,21 +296,22 @@ body {
   .container {
     max-width: 720px;
   }
-  .promo {
-    background: #FFF1B8 url(../img/promo/pizza.png) no-repeat top right -140px /600px;
-  }
   .card-info {
     padding: 3% 4% 4.5%;
   }
   .card-title {
     font-size: 21px;
   }
-  .card-text {
-    font-size: 16px;
-  }
   .rating {
     margin-right: 10px;
     font-size: 16px;
+  }
+  .card-info {
+    min-height: 220px;
+  }
+  .btn-buy {
+    width: 60%;
+    margin-right: 8%;
   }
   .footer-nav {
     flex: 71.9%;
@@ -317,17 +333,6 @@ body {
   } 
   .btn-cart {
     width: 53%;
-  }
-  .promo {
-    min-height: 270px;
-    background: #FFF1B8 url(../img/promo/pizza.png) no-repeat top right -140px /400px;
-  }
-  .promo-title {
-    width: 70%;
-    font-size: 36px;
-  }
-  .promo-text {
-    width: 70%;
   }
   .products-title {
     font-size: 34px;
@@ -361,24 +366,9 @@ body {
   .btn {
     margin-left: 10px;
   }
-  .promo {
-    background: #FFF1B8 url(../img/promo/pizza.png) no-repeat bottom -175px center /400px;
-  }
-  .promo-title {
-    width: 100%;
-    font-size: 30px;
-    text-align: center;
-    padding: 5.7% 5.9% 0;
-  }
-  .promo-text {
-    width: 100%;
-    font-size: 18px;
-    line-height: 1;
-    text-align: center;
-    padding: 0 5.9%;
-  }
   .products-header {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .products-title {
     font-size: 28px;
@@ -386,11 +376,26 @@ body {
     margin-bottom: 15px;
     text-align: center;
   }
+  .card-text {
+    margin-bottom: 15px;
+  }
   .card {
     flex: 0 0 100%;
   }
   .card:first-child, .card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5) {
     margin-bottom: 10px;
+  }
+  .card-info {
+    min-height: 210px;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .card-desc {
+    text-align: center;
+  }
+  .buy {
+    justify-content: center;
   }
   .footer {
     flex-wrap: wrap;
