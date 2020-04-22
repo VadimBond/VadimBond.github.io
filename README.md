@@ -4,12 +4,10 @@
 
 My websites:
 
-[main](https://vadimbond.github.io/ "main") - main page
+[simple-wordpress](https://vadimbond.github.io/simple-wordpress/ "simple-wordpress") - html, css (not adaptive)
 
-[simple-wordpress](https://vadimbond.github.io/simple-wordpress/ "simple-wordpress") - simple-wordpress
+[batman-2021](https://vadimbond.github.io/batman-2021/ "batman-2021") - html, css (animate, fancybox), js, adaptive (desktop first) 
 
-[batman-2021](https://vadimbond.github.io/batman-2021/ "batman-2021") - batman-2021
+[delivery-food](https://vadimbond.github.io/delivery-food/ "delivery-food") - html, css, adaptive (desktop first) 
 
-[delivery-food](https://vadimbond.github.io/delivery-food/ "delivery-food") - delivery-food
-
-[landing-itvdn](https://vadimbond.github.io/landing-itvdn/ "landing-itvdn") - landing-itvdn
+[landing-itvdn](https://vadimbond.github.io/landing-itvdn/ "landing-itvdn") - gulp, pug, scss, adaptive (desktop first)
