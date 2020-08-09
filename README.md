@@ -4,6 +4,8 @@
 
 My websites:
 
+[todo-app](https://vadimbond.github.io/todo-app/ "todo-app") - SPA, React, bootstrap-4 (+ icons), Local Storage
+
 [pulse-rate](https://vadimbond.github.io/pulse-rate/ "pulse-rate") - git, gulp, BEM, html, scss, js, responsive
 
 [uber-bs4grid](https://vadimbond.github.io/uber-bs4grid/ "uber-bs4grid") - git, html, scss, bootstrap-4(grid and reboot), js, Pixel Perfect, responsive
